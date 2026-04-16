@@ -60,7 +60,7 @@ function blogReadTime(string $html): string {
  * Infere categoria a partir do título/conteúdo
  */
 function blogInferCategory(string $title): string {
-    $title = mb_strtolower($title);
+    $title = strtolower($title);
     if (strpos($title, 'holding') !== false)              return 'Holding';
     if (strpos($title, 'valuation') !== false)            return 'Valuation';
     if (strpos($title, 'bpo') !== false)                  return 'BPO Financeiro';
