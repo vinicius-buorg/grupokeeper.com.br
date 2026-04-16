@@ -1,6 +1,6 @@
 # Todos acessos para HTTPS
  RewriteEngine On
-# RewriteCond %{HTTPS} off [OR]
+ RewriteCond %{HTTPS} off [OR]
 # RewriteCond %{HTTP_HOST} ^grupokeeper\.com\.br$ [NC]
 # RewriteRule ^(.*)$ https://www.grupokeeper.com.br/$1 [R=301,L]
 
