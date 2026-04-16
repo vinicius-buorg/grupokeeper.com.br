@@ -496,39 +496,7 @@ $borg->cssCompress(array(
                 </div>
             </div>
         </section>
-        <section id="avaliacoes" aria-label="Avaliações de clientes do Grupo Keeper">
-            <div class="container">
-                <div class="aval-header text-center">
-                    <span class="section-label">O QUE NOSSOS CLIENTES DIZEM</span>
-                    <h2>Avaliações de Clientes</h2>
-                    <p>Mais de <?= count($avaliacoes) ?> clientes confiam no Grupo Keeper para assessoria contábil e consultoria empresarial.</p>
-                </div>
-                <div class="aval-grid">
-                    <?php foreach ($avaliacoes as $av):
-                        $initials = preg_replace('/[^A-Z]/','', strtoupper($av['nome']));
-                        $initials = mb_substr($initials, 0, 1) . (mb_strlen($initials) > 1 ? mb_substr($initials, -1) : '');
-                    ?>
-                    <div class="dep-container">
-                        <div class="aval-stars dep-icons" aria-label="Avaliação: <?= $av['nota'] ?> de 5 estrelas">
-                            <?php for ($s = 1; $s <= 5; $s++): ?>
-                                <i class="fa-solid fa-star<?= $s > $av['nota'] ? ' star-empty' : '' ?>" aria-hidden="true"></i>
-                            <?php endfor; ?>
-                        </div>
-                        <blockquote class="desp-desc">
-                            <p>"<?= htmlspecialchars($av['texto']) ?>"</p>
-                        </blockquote>
-                        <div class="dep-title aval-autor">
-                            <div class="aval-avatar" aria-hidden="true"><?= $initials ?></div>
-                            <div class="aval-autor-info">
-                                <strong><?= htmlspecialchars($av['nome']) ?></strong>
-                                <span><?= htmlspecialchars($av['cargo']) ?> — <?= htmlspecialchars($av['cidade']) ?></span>
-                            </div>
-                        </div>
-                    </div>
-                    <?php endforeach; ?>
-                </div>
-            </div>
-        </section>
+
         <!-- BLOG PREVIEW -->
         <section id="blog-home">
             <div class="container">
