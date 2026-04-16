@@ -1,0 +1,48 @@
+/* Direitos Texto */
+.direitos-texto{margin-top:15px;padding:5px 10px;background:#f7f7f7}
+.direitos-texto p{font-size:11px;margin:0;color:#717171}
+.direitos-texto p a{color:#888787;text-decoration:none}
+.direitos-texto p a:hover{text-decoration:underline}
+/* Veja Tambem */
+.veja-tambem h5 {margin:20px 0 5px 0;font-size:18px}
+.veja-tambem h6 {margin: 8px 0 0 0;line-height: 16px;overflow: hidden;height: 55px;text-overflow: ellipsis; text-align: center;}
+.veja-tambem h6 a {color:#5a5a5a;font-size:14px}
+/* Galeria de Fotos */
+.lista-galeria-fancy {border-bottom:1px solid #eee;text-align:center}
+/* Tab de regiões */
+.nav {padding-left:0;margin-bottom:0;list-style:none}
+.nav > li {position:relative;display:block}
+.nav > li > a {position:relative;display:block;padding:10px 10px 15px;font-size: 12px;color:#989898}
+.nav > li > a:focus, .nav > li > a:hover {text-decoration:none;background-color:#eee}
+.nav > li > a:hover {border-color:#eee #eee #ddd}
+.nav > li.disabled > a {color:#777}
+.nav > li.disabled > a:focus,.nav > li.disabled > a:hover {color:#777;text-decoration:none;cursor:not-allowed;background-color:transparent}
+.nav .open > a,.nav .open > a:focus,.nav .open > a:hover {background-color:#eee;border-color:#337ab7}
+.nav-tabs {border-bottom:1px solid #ddd}
+.nav-tabs > li {float:left;margin-bottom:-1px}
+.nav-tabs > li > a {margin-right:0;line-height:1.42857143;border:1px solid transparent;border-radius:4px 4px 0 0}
+.nav-tabs > li > a:hover {border-color:#eee #eee #ddd}
+.nav-tabs > li.active > a,.nav-tabs > li.active > a:focus, .nav-tabs > li.active > a:hover {color:#555;cursor:default;background-color:#fff;border:1px solid #ddd;border-bottom-color:transparent}
+/* Tabs */
+.tab-content > .tab-pane {display:none}
+.tab-content > .active {display:block}
+/* Tabs Regiões */
+.tabs-regioes {margin-top:15px;display:block;background:var(--secondary);padding: 5px;border: solid 1px #eee;border-radius: 3px;box-shadow: -2px 2px 1px #eee;}
+div.tabs-regioes h4 {margin: 10px 0;color:#fff}
+.tabs-regioes h3 {margin-top:25px;font-size:18px;color:#5a5a5a;}
+.tabs-regioes .tab-content .tab-pane > ul {list-style-type:none;padding:0;display:inline-block;}
+.tabs-regioes .tab-content .tab-pane > ul > li {cursor:pointer;width:25%;float:left;font-size:11px;color:#666;padding: 5px 0 5px 5px;text-shadow: 1px 1px 1px #eee;}
+.tabs-regioes .tab-content .tab-pane > ul > li:hover {background-color: #eee;}
+.action-scroll {padding: 5px 0 5px 12px;cursor: pointer;position: relative;}
+.scroll-div {padding: 0 10px 10px;}
+.tabs-regioes .nav li a {color: #fff;}
+.tabs-regioes .nav li.active a {color: #000;}
+.tab-content {background: #fff; padding: 0 10px;}
+.action-scroll span {font-size: 13px;font-style: italic;display: block;color: #fff;}
+.tabs-regioes .nav li a:hover {color: #000;}
+.tabs-regioes .icone-acao {position: absolute;top: 25px;right: 20px;font-size: 15px;color: #fff;transition: ease 300ms all;}
+.tabs-regioes .action-scroll.tab-ativo .icone-acao {transform: rotate(-180deg);}
+.tabs-regioes .action-scroll:hover .icone-acao {color: #f4f4f4;text-shadow: 1px 1px 1px #eee;}
+@media screen and (max-width: 40em) {
+    .tabs-regioes .tab-content .tab-pane > ul > li {width:50%}
+}

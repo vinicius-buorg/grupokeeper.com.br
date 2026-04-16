@@ -1,0 +1,46 @@
+.box-cookies.hide {
+    display: none !important;
+}
+
+.box-cookies {
+    position: fixed;
+    background: #0f181c;
+    width: auto;
+    max-width: 90%;
+    display: flex;
+    z-index: 998;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    border-radius: 5px;
+    bottom: 10px;
+    left: 10px;
+    box-shadow: -2px 3px 2px rgba(0, 0, 0, 0.3);
+}
+
+.box-cookies .msg-cookies,
+.box-cookies .btn-cookies {
+    text-align: center;
+    padding: 10px;
+    color: #fff;
+    font-size: 15px;
+}
+
+.box-cookies .btn-cookies {
+    background: #155D89;
+    cursor: pointer;
+    color: #fff;
+    border: solid 1px #155D89;
+    border-radius: 5px;
+    padding: 7px 10px;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 14px;
+}
+
+@media screen and (max-width: 600px) {
+    .box-cookies {
+        flex-direction: column;
+        padding: 0 10px 20px;
+    }
+}

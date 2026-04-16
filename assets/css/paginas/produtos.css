@@ -1,0 +1,73 @@
+:root {
+    --font: 'Raleway', sans-serif;
+    --main: #7d010c;
+    --main-strong: #041028;
+    --secondary: #d4b046;
+    --blue: #36cdff;
+    --grey: #7A7A7A;
+    --black: #212529;
+    --white: #FFF;
+    --dark-white: #F7F7F7;
+    --bradius: 16px;
+  }
+
+#breadcrumb {
+    background: var(--black);
+    color: var(--white);
+    display: block;
+    padding: 15px 30px;
+}
+
+#breadcrumb a {
+    color: var(--white);
+}
+
+#breadcrumb strong {
+    color: var(--secondary);
+}
+
+#cta {
+    padding: 7rem 0;
+}
+
+#cta h2 {
+    font-size: 2.8rem;
+    border-bottom: 2px solid var(--secondary);
+    display: inline-block;
+}
+
+#cta h2 span {
+    color: var(--secondary);
+}
+
+#cta p {
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+#cta form {
+    margin-top: 50px;
+}
+
+/* #cta form label,
+#cta form input::placeholder,
+#cta form input,
+#cta form select {
+    color: var(--white) !important;
+}
+
+#cta form option {
+    color: var(--black) !important;
+} */
+
+#cta form button.btn.btn-default.btn-block {
+    background: var(--main);
+    color: var(--white);
+    border-color: var(--main);
+    border-width: 2px;
+    transition: .25s ease-in-out;
+}
+
+#cta form button.btn.btn-default.btn-block:hover {
+    background: var(--main-strong);
+}

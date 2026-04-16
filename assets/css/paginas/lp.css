@@ -1,0 +1,578 @@
+.box-buttons a,
+button,
+ul.disc-list li,
+ul.pl-15 li,
+p:not(p.not-fsz) {
+    font-size: 20px;
+}
+
+h1,
+h2 {
+    font-size: 32px;
+}
+
+h3 {
+    font-size: 30px;
+}
+
+.mt-10 {
+    margin-top: 10px;
+}
+
+.mt-20 {
+    margin-top: 20px;
+}
+
+.mt-30 {
+    margin-top: 30px;
+}
+
+.mt-40 {
+    margin-top: 40px;
+}
+
+.padding-40-0 {
+    padding: 40px 0;
+}
+
+.pl-15 {
+    padding-left: 15px;
+}
+
+.c-white {
+    color: #fff;
+}
+
+.c-main {
+    color: var(--main);
+}
+
+.c-sec {
+    color: var(--secondary);
+}
+
+.bg-main {
+    background-color: var(--main);
+}
+
+.bg-sec {
+    background-color: var(--secondary);
+}
+
+.relative {
+    position: relative;
+}
+
+.center-div {
+    align-items: center;
+    justify-content: center;
+}
+
+.box-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 20px 0;
+}
+
+.box-buttons a {
+    padding: 10px 20px;
+    margin-top: 5px;
+    margin-right: 5px;
+    border-radius: .5rem;
+    transition: all .4s ease-in-out;
+    font-weight: bold;
+}
+
+.main-btn {
+    background-color: var(--main);
+    color: #fff;
+    border: 2px solid var(--main);
+}
+
+.main-btn:hover {
+    background-color: transparent;
+    color: var(--secondary);
+}
+
+.sec-btn {
+    background-color: var(--secondary);
+    color: #000;
+    border: 2px solid var(--secondary);
+}
+
+.sec-btn:hover {
+    background-color: transparent;
+    color: var(--secondary);
+}
+
+
+#about {
+    padding: 40px 0;
+    height: 100vh;
+    background: url(imagens/main/lps/black-bg.webp) fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#about .relative {
+    height: 560px;
+}
+
+
+.man-img {
+    position: absolute;
+    bottom: 1%;
+    transform: translate(17%, 13%) !important;
+}
+
+.man-img img {
+    max-height: 550px;
+}
+
+.accordion-item {
+    margin-bottom: 16px;
+    background: #FFF;
+    overflow: hidden;
+    box-shadow: 0 0 0 1px #FFF;
+}
+
+.accordion-header {
+    background: #fff;
+    color: var(--main);
+    font-weight: bold;
+    padding: 20px;
+    width: 100%;
+    text-align: left;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 2px solid var(--main);
+    border-radius: .5rem;
+}
+
+.accordion-body {
+    max-height: 0px;
+    overflow: hidden;
+    background-color: var(--dark-white);
+    transition: ease-in-out 0.6s all;
+}
+
+.accordion-item.active .accordion-body {
+    max-height: 300px;
+    padding: 20px;
+    transition: ease-in-out 0.6s all;
+    margin-top: 5px;
+    border-radius: .5rem;
+    font-weight: 500;
+}
+
+.accordion-header .arrow {
+    font-size: 24px;
+    transition: transform 0.6s ease;
+}
+
+.accordion-item.active .arrow {
+    transform: rotate(-90deg);
+}
+
+.disc-list {
+    list-style-type: disc;
+}
+
+#four-cards .card {
+    padding: 20px;
+    border-radius: 12px;
+    margin: 20px 0;
+}
+
+#four-cards .card h3 {
+    font-size: 28px;
+}
+
+#four-cards .card p {
+    min-height: 233px;
+}
+
+#four-cards .card i {
+    font-size: 30px;
+}
+
+.bg-chess {
+    background: url(imagens/main/lps/chess-bg.webp) center no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    padding: 100px 80px;
+    border-radius: 25px;
+}
+
+.bg-chess h2 {
+    font-size: clamp(30px, 5vw, 40px);
+}
+
+.full-content .text {
+    width: 50%;
+    padding: 10px;
+}
+
+.full-content .box-img {
+    width: 50%;
+}
+
+.full-content .text h3 {
+    font-size: 30px;
+}
+
+.full-content .text ul {
+    margin-left: 10px;
+}
+
+.full-content .text ul li {
+    margin-top: 10px;
+}
+
+.full-content .text strong {
+    color: #fff;
+}
+
+.boxes-normal-flex,
+.boxes-reverse-flex {
+    padding: 30px;
+    margin: 30px 0;
+    border-radius: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.boxes-normal-flex {
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.boxes-reverse-flex {
+    flex-direction: row-reverse;
+    flex-wrap: wrap-reverse;
+}
+
+#main-bgs .box-buttons {
+    align-items: center;
+    justify-content: center;
+}
+
+.youtube-thumbnail-wrapper {
+    position: relative;
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    cursor: pointer;
+    margin: 0 auto;
+    border-radius: 12px;
+}
+
+.youtube-thumbnail-wrapper img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    border-radius: 12px;
+}
+
+.youtube-play-button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 64px;
+    height: 44px;
+    background: red;
+    border-radius: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.youtube-play-button svg {
+    fill: white;
+    width: 32px;
+    height: 32px;
+}
+
+#videos .counters h3 {
+    font-size: clamp(40px, 5vw, 50px);
+    letter-spacing: 2px;
+    font-weight: 500;
+}
+
+#videos .counters p {
+    font-size: clamp(28px, 5vw, 30px);
+}
+
+#gray-bg {
+    background-color: var(--dark-white);
+}
+
+#gray-bg .cards {
+    border-radius: 12px;
+    margin: 30px 0;
+}
+
+#gray-bg .cards h3 {
+    padding: 20px;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+}
+
+#gray-bg .card-content {
+    background-color: #fff;
+    box-shadow: 0px 5px 3px rgba(0, 0, 0, 0.541);
+    padding: 50px;
+    border-radius: 12px 50px 12px 12px;
+    min-height: 510px;
+}
+
+#gray-bg .card-content p {
+    margin: 15px 0;
+}
+
+#gray-bg .card-white {
+    background-color: #fff;
+    padding: 30px;
+    min-height: 510px;
+    margin: 20px 0;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.582);
+    border-radius: 12px;
+}
+
+#gray-bg .card-white i {
+    font-size: 28px;
+    margin-bottom: 10px;
+    padding: 10px;
+    border-bottom: 3px solid var(--secondary);
+}
+
+#gray-bg .card-white h3 {
+    font-size: 28px;
+}
+
+#gray-bg .card-white ul {
+    padding-left: 25px;
+}
+
+#red-bg {
+    background: url(imagens/main/lps/red-bg.webp) no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+#red-bg h2 {
+    font-size: 40px;
+}
+
+#red-bg h2,
+#red-bg h3 {
+    padding: 2px 10px;
+    border-bottom: 3px solid var(--secondary);
+    border-left: 3px solid var(--secondary);
+}
+
+.up-ai {
+    align-items: start;
+}
+
+.up-ai h3 {
+    font-size: 30px;
+}
+
+#black-bg {
+    background: url(imagens/main/lps/black-bg.webp) no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+#black-bg .accordion-item {
+    margin-bottom: 16px;
+    background: transparent;
+    overflow: hidden;
+    box-shadow: 0 0 0 0px #00000046;
+}
+
+#black-bg .accordion-header {
+    background: transparent;
+    color: #FFF;
+    font-weight: bold;
+    padding: 20px;
+    width: 100%;
+    text-align: left;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: none;
+    border-radius: .5rem;
+}
+
+#black-bg .accordion-body {
+    max-height: 0px;
+    overflow: hidden;
+    background-color: var(--secondary);
+    transition: ease-in-out 0.6s all;
+}
+
+#black-bg .accordion-item.active .accordion-body {
+    max-height: 300px;
+    padding: 20px;
+    transition: ease-in-out 0.6s all;
+    margin-top: 5px;
+    border-radius: .5rem;
+    font-weight: 500;
+}
+
+#black-bg .accordion-header .arrow {
+    font-size: 24px;
+    transition: transform 0.6s ease;
+}
+
+#black-bg .accordion-item.active .arrow {
+    transform: rotate(-90deg);
+}
+
+
+@media screen and (max-width: 992px) {
+
+    h1,
+    h2,
+    h3,
+    button,
+    ul li,
+    p {
+        text-align: center;
+    }
+
+    .box-buttons {
+        align-items: center;
+        justify-content: center;
+    }
+
+    #about .img-responsive {
+        margin: 0 auto !important;
+    }
+
+    #about .relative {
+        display: none;
+    }
+
+    .flex.rev-mobile {
+        flex-wrap: wrap-reverse !important;
+    }
+
+    #four-cards .card p {
+        min-height: fit-content;
+    }
+
+    .full-content .text {
+        width: 100%;
+    }
+
+    .full-content .box-img {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .boxes-normal-flex {
+        flex-wrap: wrap-reverse;
+    }
+
+    .mobile-config-counter {
+        padding: 0;
+        margin: 20px 0;
+    }
+
+    #gray-bg .cards h3 {
+        justify-content: center;
+    }
+
+    #gray-bg .card-content {
+        min-height: fit-content;
+    }
+
+    #gray-bg .card-white {
+        min-height: fit-content;
+    }
+
+    #gray-bg .card-white .box-icon {
+        text-align: center;
+    }
+
+    #red-bg .flex.padding-40-0 {
+        flex-wrap: wrap-reverse;
+    }
+
+    #red-bg h2 {
+        margin-top: 20px;
+    }
+
+    #red-bg h2,
+    #red-bg h3 {
+        border-left: none;
+    }
+
+    #red-bg .box-text {
+        margin-bottom: 30px;
+    }
+}
+
+@media screen and (max-width: 769px) {
+    .bg-chess {
+        padding: 60px 40px;
+    }
+}
+
+@media screen and (max-width: 426px) {
+
+    .box-buttons a,
+    button,
+    ul.disc-list li,
+    ul.pl-15 li,
+    p:not(p.not-fsz) {
+        font-size: 16px;
+    }
+
+    h1,
+    h2 {
+        font-size: 24px;
+        font-weight: 500;
+    }
+
+    h3 {
+        font-size: 23px;
+        font-weight: 500;
+    }
+
+    .padding-40-0 {
+        padding: 25px 0;
+    }
+
+    .mt-40 {
+        margin-top: 20px;
+    }
+
+    #about {
+        height: 480px;
+    }
+
+    .bg-chess {
+        padding: 20px;
+    }
+
+    .boxes-normal-flex,
+    .boxes-reverse-flex {
+        padding: 20px;
+        margin: 15px 0;
+    }
+
+    #videos .mobile-config-counter {
+        padding: 0;
+    }
+}

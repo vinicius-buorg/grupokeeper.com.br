@@ -1,0 +1,582 @@
+/* ============================================================
+   ESPECIALIDADES — contabilidade-especializada.css
+   ============================================================ */
+
+/* ---- Seção título (listagem) ---- */
+#contabilidade {
+    padding: 3rem 0 1rem;
+}
+
+#contabilidade h2 {
+    font-size: clamp(1.8rem, 4vw, 2.5rem);
+    color: var(--main);
+    margin: 0;
+}
+
+#contabilidade h2::after {
+    content: '';
+    display: block;
+    width: 56px;
+    height: 4px;
+    background: var(--secondary);
+    margin-top: 0.75rem;
+    border-radius: 2px;
+}
+
+/* ---- Cards de especialidades (listagem) ---- */
+#especialidades {
+    padding: 2rem 0 4rem;
+}
+
+#especialidades .flexBetween {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+    align-items: stretch;
+    justify-content: unset;
+    margin: 0;
+}
+
+#especialidades .card-especialidade {
+    text-decoration: none;
+    color: inherit;
+    width: 100% !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    float: none !important;
+}
+
+#especialidades .card-especialidade .holder {
+    background: #fff;
+    border-radius: var(--bradius);
+    box-shadow: 0 4px 20px rgba(26,10,12,0.07);
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+    transition: transform .25s, box-shadow .25s;
+}
+
+#especialidades .card-especialidade:hover .holder {
+    transform: translateY(-4px);
+    box-shadow: 0 14px 36px rgba(26,10,12,0.14);
+}
+
+#especialidades .card-especialidade .img-holder {
+    width: 200px;
+    min-width: 200px;
+    height: 100%;
+    min-height: 160px;
+    overflow: hidden;
+    flex-shrink: 0;
+}
+
+#especialidades .card-especialidade .img-holder img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: transform .4s;
+}
+
+#especialidades .card-especialidade:hover .img-holder img {
+    transform: scale(1.05);
+}
+
+#especialidades .card-especialidade .info {
+    flex: 1;
+    padding: 1.25rem 1.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#especialidades .card-especialidade .info h4 {
+    font-size: 1.05rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+    color: var(--main);
+    line-height: 1.3;
+}
+
+#especialidades .card-especialidade .info p {
+    font-size: 0.88rem;
+    color: #555;
+    margin: 0;
+    line-height: 1.55;
+}
+
+/* ---- Cards da listagem (contabilidade-especializada.php) ---- */
+#especialidades .box-title-servicos p {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 2rem;
+    line-height: 1.7;
+}
+
+#especialidades .ajuste-col {
+    padding: 0.5rem;
+}
+
+.card {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    background: #fff;
+    border-radius: var(--bradius);
+    box-shadow: 0 4px 16px rgba(26,10,12,0.07);
+    margin: 0;
+    overflow: hidden;
+    transition: transform .25s, box-shadow .25s;
+    text-decoration: none;
+    color: inherit;
+    min-height: 130px;
+}
+
+.card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 32px rgba(26,10,12,0.14);
+}
+
+.card-image-associacao,
+.card-image-escolas,
+.card-image-servicos,
+.card-image-comercio,
+.card-image-industria,
+.card-image-startups,
+.card-image-e-commerce,
+.card-image-restaurantes,
+.card-image-medicos,
+.card-image-autopecas,
+.card-image-pessoas-fisicas {
+    width: 160px;
+    min-width: 160px;
+    height: 130px;
+    flex-shrink: 0;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    transition: transform .4s;
+}
+
+.card:hover .card-image-associacao,
+.card:hover .card-image-escolas,
+.card:hover .card-image-servicos,
+.card:hover .card-image-comercio,
+.card:hover .card-image-industria,
+.card:hover .card-image-startups,
+.card:hover .card-image-e-commerce,
+.card:hover .card-image-restaurantes,
+.card:hover .card-image-medicos,
+.card:hover .card-image-autopecas,
+.card:hover .card-image-pessoas-fisicas {
+    transform: scale(1.05);
+}
+
+.card-image-associacao     { background-image: url(imagens/main/especialidades/associacoes.webp); }
+.card-image-escolas        { background-image: url(imagens/main/especialidades/escolas.webp); }
+.card-image-servicos       { background-image: url(imagens/main/especialidades/prestadores-de-servicos.webp); }
+.card-image-comercio       { background-image: url(imagens/main/especialidades/comercio.webp); }
+.card-image-industria      { background-image: url(imagens/main/especialidades/industria.webp); }
+.card-image-startups       { background-image: url(imagens/main/especialidades/startups.webp); }
+.card-image-e-commerce     { background-image: url(imagens/main/especialidades/e-commerce.webp); }
+.card-image-restaurantes   { background-image: url(imagens/main/especialidades/restaurantes.webp); }
+.card-image-medicos        { background-image: url(imagens/main/especialidades/medicos.webp); }
+.card-image-autopecas      { background-image: url(imagens/main/especialidades/autopecas.webp); }
+.card-image-pessoas-fisicas { background-image: url(imagens/main/especialidades/pessoas-fisicas.webp); }
+
+.card-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 1rem 1.25rem;
+    flex: 1;
+}
+
+.category {
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 0.8rem;
+    color: var(--main);
+    margin-bottom: 0.4rem;
+    letter-spacing: 0.5px;
+}
+
+.heading {
+    font-size: 0.88rem;
+    color: #444;
+    line-height: 1.5;
+    font-weight: 400;
+}
+
+.author {
+    margin-top: 0.4rem;
+    font-size: 0.78rem;
+    color: var(--secondary);
+    font-weight: 600;
+}
+
+@media screen and (max-width: 641px) {
+    .card { flex-wrap: wrap; }
+
+    .card-image-associacao,
+    .card-image-escolas,
+    .card-image-servicos,
+    .card-image-comercio,
+    .card-image-industria,
+    .card-image-startups,
+    .card-image-e-commerce,
+    .card-image-restaurantes,
+    .card-image-medicos,
+    .card-image-autopecas,
+    .card-image-pessoas-fisicas {
+        width: 100%;
+        min-width: 0;
+        height: 160px;
+    }
+}
+
+/* ---- Produto individual — #especial ---- */
+#especial {
+    padding: 4rem 0 3rem;
+    background: var(--dark-white);
+    border-bottom: 3px solid var(--secondary);
+}
+
+.esp-titulo {
+    margin-bottom: 2rem;
+}
+
+.esp-titulo h2 {
+    font-size: clamp(1.6rem, 4vw, 2.5rem);
+    color: var(--main);
+    margin: 0;
+    line-height: 1.2;
+}
+
+.esp-titulo h2::after {
+    content: '';
+    display: block;
+    width: 56px;
+    height: 4px;
+    background: var(--secondary);
+    margin-top: 0.75rem;
+    border-radius: 2px;
+}
+
+.esp-img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.esp-img img {
+    border-radius: var(--bradius);
+    box-shadow: 0 12px 36px rgba(26,10,12,0.18);
+    width: 100%;
+    max-width: 480px;
+    object-fit: cover;
+}
+
+.esp-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 2rem;
+}
+
+.esp-desc p {
+    font-size: 1rem;
+    line-height: 1.85;
+    color: #4a3a3b;
+    margin-bottom: 0.9rem;
+}
+
+/* ---- Diferenciais (accordion duplo) ---- */
+#diferenciais {
+    padding: 3rem 0;
+}
+
+#diferenciais .container .flex {
+    align-items: flex-start;
+    gap: 1.5rem;
+}
+
+#diferenciais .accordion-container {
+    width: 100%;
+}
+
+#diferenciais .menu-button {
+    width: 100%;
+    padding: 0.9rem 1.25rem;
+    margin-top: 4px;
+    font-size: 0.95rem;
+    border: 1.5px solid var(--main);
+    background: #fff;
+    color: var(--main);
+    cursor: pointer;
+    border-radius: var(--bradius);
+    transition: background .2s, color .2s;
+    font-weight: 600;
+    text-align: left;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: auto;
+}
+
+#diferenciais .menu-button:hover,
+#diferenciais .menu-button.open {
+    background: var(--main);
+    color: #fff;
+}
+
+#diferenciais .icon {
+    font-size: 1rem;
+    transition: transform .3s;
+    flex-shrink: 0;
+}
+
+#diferenciais .menu-button.open .icon {
+    transform: rotate(45deg);
+}
+
+#diferenciais .conteudo {
+    padding: 0 1.25rem;
+    transition: height .35s ease;
+    height: 0;
+    overflow: hidden;
+    border: none;
+    margin: 0;
+    color: #333;
+}
+
+#diferenciais .accordion-icon i {
+    display: none; /* ícone absoluto substituído pelo icon inline */
+}
+
+#diferenciais .conteudo span {
+    color: var(--main);
+    font-weight: 700;
+}
+
+#diferenciais .accordion-container .accordion .conteudo-atividades ul {
+    list-style-type: decimal !important;
+    padding-left: 1.25rem;
+}
+
+#diferenciais .accordion-container .accordion .conteudo ul li {
+    margin: 0.3rem 0;
+    line-height: 1.7;
+    font-size: 0.95rem;
+}
+
+#diferenciais .accordion-container .accordion .conteudo-atividades ul li::marker {
+    color: var(--main);
+    font-weight: 700;
+}
+
+#diferenciais .accordion-container .accordion .conteudo-bene ul {
+    list-style-type: disc !important;
+    padding-left: 1.25rem;
+}
+
+#diferenciais .accordion-container .accordion .conteudo-bene ul li::marker {
+    color: var(--secondary);
+    font-weight: 700;
+}
+
+/* ---- Vantagens ---- */
+#vantagens {
+    padding: 3rem 0;
+    background: var(--dark-white);
+}
+
+.vant-titulo h2,
+.duv-titulo h2 {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    color: var(--main);
+}
+
+.vant-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background: #fff;
+    border-radius: var(--bradius);
+    padding: 2rem 1.25rem;
+    box-shadow: 0 4px 20px rgba(26,10,12,0.07);
+    margin: 0.5rem;
+    transition: transform .25s, box-shadow .25s;
+    height: 100%;
+}
+
+.vant-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 14px 32px rgba(26,10,12,0.12);
+}
+
+.vant-icon i {
+    font-size: 2rem;
+    color: #fff;
+    background: var(--main);
+    border: none;
+    border-radius: 50%;
+    width: 62px;
+    height: 62px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    margin-bottom: 0.75rem;
+}
+
+.vant-number p {
+    font-size: 2rem;
+    font-weight: 800;
+    color: var(--secondary);
+    margin: 0 0 0.5rem;
+}
+
+.vant-title h2 {
+    color: var(--main-strong);
+    font-size: 1rem;
+    font-weight: 700;
+    height: auto;
+    margin-bottom: 0.5rem;
+}
+
+.vant-desc p {
+    font-size: 0.88rem;
+    color: #666;
+    line-height: 1.6;
+    overflow-y: visible;
+    height: auto;
+    margin: 0;
+}
+
+/* ---- Dúvidas ---- */
+#duvidas {
+    padding: 3rem 0 2rem;
+}
+
+.accordion-container { width: 100%; }
+
+.menu-button {
+    width: 100%;
+    padding: 0.9rem 1.25rem;
+    margin-top: 4px;
+    font-size: 0.95rem;
+    border: 1.5px solid var(--main);
+    background: #fff;
+    color: var(--main);
+    cursor: pointer;
+    transition: background .2s, color .2s;
+    text-align: left;
+    border-radius: var(--bradius);
+    font-weight: 600;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu-button:hover,
+.menu-button.open {
+    background: var(--main);
+    color: #fff;
+}
+
+.icon {
+    font-size: 1rem;
+    transition: transform .3s;
+    flex-shrink: 0;
+}
+
+.menu-button.open .icon { transform: rotate(45deg); }
+
+.conteudo {
+    padding: 0 1.25rem;
+    transition: height .35s ease;
+    height: 0;
+    overflow: hidden;
+    border: none;
+}
+
+.conteudo span { color: var(--secondary); }
+
+.accordion-icon i { display: none; }
+
+/* ---- Timeline / CTA ---- */
+#timeline {
+    padding: 3rem 0;
+    background: var(--cream);
+}
+
+#timeline .divider {
+    border-top: none;
+    margin-top: 0;
+    padding-top: 0;
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+#timeline .divider p {
+    font-size: 1.05rem;
+    font-weight: 500;
+    color: #444;
+    line-height: 1.7;
+    margin: 0;
+}
+
+#timeline .divider a.orcamento,
+.divider a.orcamento {
+    display: inline-block;
+    background: var(--main);
+    border: 2px solid var(--main);
+    color: #fff;
+    transition: background .2s, transform .2s;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 1rem;
+    padding: 0.85rem 1.75rem;
+    border-radius: 50px;
+    white-space: nowrap;
+}
+
+#timeline .divider a.orcamento:hover,
+.divider a.orcamento:hover {
+    background: var(--main-strong);
+    border-color: var(--main-strong);
+    transform: translateY(-2px);
+}
+
+/* ---- Responsivo ---- */
+@media screen and (max-width: 768px) {
+    #especial { padding: 3rem 0 2rem; }
+
+    .esp-content {
+        padding-left: 0;
+        margin-top: 1.5rem;
+    }
+
+    #especialidades .flexBetween {
+        grid-template-columns: 1fr;
+    }
+
+    #timeline .divider { flex-direction: column; text-align: center; }
+}
+
+@media screen and (max-width: 641px) {
+    #especialidades .card-especialidade .img-holder {
+        width: 130px;
+        min-width: 130px;
+    }
+
+    #diferenciais .container .flex { flex-direction: column; }
+}

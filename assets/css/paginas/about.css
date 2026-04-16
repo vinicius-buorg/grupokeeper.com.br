@@ -1,0 +1,607 @@
+/* ============================================================
+   QUEM SOMOS — about.css
+   ============================================================ */
+
+/* ---- Seção Hero / About ---- */
+#about {
+    padding: 5rem 0 4rem;
+}
+
+#about .image-holder {
+    border-radius: var(--bradius);
+    overflow: hidden;
+    box-shadow: 0 24px 60px rgba(26,10,12,0.18);
+}
+
+#about .image-holder img {
+    width: 100%;
+    display: block;
+    object-fit: cover;
+}
+
+#about .desc {
+    padding-left: 2.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#about h1 {
+    font-size: 3rem;
+    color: var(--main);
+    line-height: 1.1;
+    margin-bottom: 0.5rem;
+}
+
+#about h1::after {
+    content: '';
+    display: block;
+    width: 56px;
+    height: 4px;
+    background: var(--secondary);
+    margin-top: 1rem;
+    margin-bottom: 1.5rem;
+    border-radius: 2px;
+}
+
+#about h2 {
+    font-size: 1.5rem;
+    color: var(--main);
+    margin: 1.75rem 0 0.6rem;
+}
+
+#about .desc p {
+    color: #4a3a3b;
+    line-height: 1.85;
+    font-size: 1rem;
+    margin-bottom: 0.9rem;
+    font-weight: 400;
+}
+
+/* ---- Seção Missão / Visão / Mapa ---- */
+#mapa {
+    background: var(--dark-white);
+    padding: 5rem 0 4rem;
+}
+
+#mapa h2 {
+    font-size: 2rem;
+    color: var(--main);
+    margin-bottom: 2.5rem;
+    font-weight: 600;
+}
+
+#mapa .holder {
+    margin-top: 0;
+}
+
+/* Cards missão/visão/objetivos */
+#mapa .desc {
+    background: #fff;
+    border-left: 4px solid var(--secondary);
+    border-radius: 0 var(--bradius) var(--bradius) 0;
+    padding: 1.25rem 1.5rem;
+    box-shadow: 0 4px 16px rgba(26,10,12,0.06);
+}
+
+#mapa .desc:not(:last-child) {
+    margin-bottom: 1.25rem;
+}
+
+#mapa h4 {
+    font-size: 1rem;
+    color: var(--main);
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    margin-bottom: 0.5rem;
+}
+
+#mapa .desc p {
+    max-width: none;
+    font-size: 0.93rem;
+    font-weight: 400;
+    color: #555;
+    margin: 0;
+    line-height: 1.7;
+}
+
+#mapa .desc ul {
+    list-style: none;
+    padding: 0;
+    margin: 0.5rem 0 0;
+    columns: 2;
+    gap: 0.5rem;
+}
+
+#mapa .desc ul li {
+    font-size: 0.88rem;
+    color: #555;
+    padding: 0.2rem 0;
+    break-inside: avoid;
+}
+
+#mapa .desc ul li::before {
+    content: '→';
+    color: var(--secondary);
+    margin-right: 0.45rem;
+    font-weight: 700;
+}
+
+#mapa h3 {
+    font-size: 1.3rem;
+    color: var(--main);
+    margin-bottom: 1rem;
+    font-weight: 600;
+}
+
+/* Cards de benefícios */
+#mapa .cards {
+    margin-top: 3.5rem;
+    align-items: stretch;
+    gap: 0;
+}
+
+#mapa .cards .element {
+    padding: 0.75rem;
+}
+
+#mapa .cards .holder {
+    background: #fff;
+    border-radius: var(--bradius);
+    padding: 2rem 1.5rem;
+    text-align: center;
+    box-shadow: 0 4px 20px rgba(26,10,12,0.07);
+    transition: transform .25s, box-shadow .25s;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#mapa .cards .holder:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 16px 36px rgba(26,10,12,0.13);
+}
+
+#mapa .cards p i {
+    font-size: 1.6rem;
+    background: var(--main);
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    width: 62px;
+    height: 62px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    margin-bottom: 1rem;
+}
+
+#mapa .cards p {
+    margin-bottom: 0;
+}
+
+#mapa .cards h3 {
+    font-size: 1.05rem;
+    font-weight: 700;
+    color: var(--main-strong);
+    margin-bottom: 0.65rem;
+    line-height: 1.3;
+}
+
+#mapa .cards .element p:last-child {
+    font-size: 0.88rem;
+    color: #666;
+    line-height: 1.65;
+    margin: 0;
+    font-weight: 400;
+}
+
+/* ---- Mapa SVG — estados ativos ---- */
+#mapa .ativo#BR-AC,
+#mapa .ativo#BR-AL,
+#mapa .ativo#BR-AP,
+#mapa .ativo#BR-AM,
+#mapa .ativo#BR-BA,
+#mapa .ativo#BR-CE,
+#mapa .ativo#BR-DF,
+#mapa .ativo#BR-ES,
+#mapa .ativo#BR-GO,
+#mapa .ativo#BR-MA,
+#mapa .ativo#BR-MT,
+#mapa .ativo#BR-MS,
+#mapa .ativo#BR-MG,
+#mapa .ativo#BR-PA,
+#mapa .ativo#BR-PB,
+#mapa .ativo#BR-PR,
+#mapa .ativo#BR-PE,
+#mapa .ativo#BR-PI,
+#mapa .ativo#BR-RJ,
+#mapa .ativo#BR-RN,
+#mapa .ativo#BR-RS,
+#mapa .ativo#BR-RO,
+#mapa .ativo#BR-RR,
+#mapa .ativo#BR-SC,
+#mapa .ativo#BR-SP,
+#mapa .ativo#BR-SE,
+#mapa .ativo#BR-TO {
+    fill: var(--main);
+    transition: .25s ease-in-out;
+    cursor: pointer;
+}
+
+#mapa .ativo#BR-AC:hover,
+#mapa .ativo#BR-AL:hover,
+#mapa .ativo#BR-AP:hover,
+#mapa .ativo#BR-AM:hover,
+#mapa .ativo#BR-BA:hover,
+#mapa .ativo#BR-CE:hover,
+#mapa .ativo#BR-DF:hover,
+#mapa .ativo#BR-ES:hover,
+#mapa .ativo#BR-GO:hover,
+#mapa .ativo#BR-MA:hover,
+#mapa .ativo#BR-MT:hover,
+#mapa .ativo#BR-MS:hover,
+#mapa .ativo#BR-MG:hover,
+#mapa .ativo#BR-PA:hover,
+#mapa .ativo#BR-PB:hover,
+#mapa .ativo#BR-PR:hover,
+#mapa .ativo#BR-PE:hover,
+#mapa .ativo#BR-PI:hover,
+#mapa .ativo#BR-RJ:hover,
+#mapa .ativo#BR-RN:hover,
+#mapa .ativo#BR-RS:hover,
+#mapa .ativo#BR-RO:hover,
+#mapa .ativo#BR-RR:hover,
+#mapa .ativo#BR-SC:hover,
+#mapa .ativo#BR-SP:hover,
+#mapa .ativo#BR-SE:hover,
+#mapa .ativo#BR-TO:hover {
+    fill: var(--secondary);
+}
+
+/* ---- Modal do mapa ---- */
+#mapa .modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.5);
+    z-index: 9998;
+}
+
+#mapa .modal-card {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 700px;
+    padding: 24px;
+    background-color: #fff;
+    border-radius: var(--bradius);
+    z-index: 9999;
+    box-shadow: 0 8px 40px rgba(0,0,0,0.25);
+}
+
+#mapa .close-btn {
+    position: absolute;
+    top: 10px;
+    right: 12px;
+    border: none;
+    background: transparent;
+    font-size: 1.3rem;
+    cursor: pointer;
+    color: #666;
+    transition: color .2s;
+}
+
+#mapa .close-btn:hover { color: var(--main); }
+
+#mapa .modal-card h5 {
+    font-size: 1.4rem;
+    color: var(--main);
+    margin: 0 0 1rem;
+    border-bottom: 1px solid #e0e0e0;
+    padding-bottom: 1rem;
+}
+
+#mapa .modal-card #lista-cidades {
+    border-bottom: 1px solid #e0e0e0;
+    padding-bottom: 1rem;
+}
+
+#mapa .modal-card ul {
+    list-style-type: disc;
+    text-align: left;
+    margin-left: 15px;
+    column-count: 3;
+    column-gap: 2em;
+    line-height: 1.7;
+}
+
+#mapa .modal-card img {
+    padding-top: 13px;
+    margin-top: 17px;
+    width: auto;
+}
+
+/* ---- Na Mídia ---- */
+#midia {
+    padding: 4rem 0;
+    text-align: center;
+    background: #fff;
+}
+
+.midia-title {
+    margin-bottom: 2.5rem;
+}
+
+.midia-title h2 {
+    font-size: 2rem;
+    font-weight: 300;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.midia-title span {
+    color: var(--main);
+    font-weight: 700;
+}
+
+.midia-img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+    filter: grayscale(1);
+    opacity: 0.75;
+    transition: filter .3s, opacity .3s;
+}
+
+.midia-img:hover {
+    filter: grayscale(0);
+    opacity: 1;
+}
+
+.midia-img a img {
+    transition: transform .3s;
+    border-radius: var(--bradius);
+}
+
+.midia-img a img:hover {
+    transform: translateY(-6px);
+}
+
+/* ---- Prêmio Quality ---- */
+.box-bg-sob-medidas {
+    background: url(../../imagens/bg-topo-1.webp) center no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-blend-mode: multiply;
+    background-color: rgba(26,10,12,0.72);
+    padding: 7rem 0;
+    position: relative;
+}
+
+.box-text-sob-medidas {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    text-align: center;
+    padding: 0 1rem;
+}
+
+.box-text-sob-medidas p {
+    color: #fff;
+    font-size: clamp(1.3rem, 3vw, 2.2rem);
+    text-align: center;
+    margin: 0 auto 2rem;
+    text-transform: uppercase;
+    line-height: 1.5;
+    font-weight: 600;
+    max-width: 680px;
+    text-shadow: 2px 2px 6px rgba(0,0,0,0.5);
+}
+
+.box-text-sob-medidas span {
+    color: var(--secondary);
+    text-transform: lowercase;
+    font-style: italic;
+}
+
+.box-text-sob-medidas a img {
+    filter: drop-shadow(0 4px 12px rgba(0,0,0,0.4));
+    transition: transform .3s;
+}
+
+.box-text-sob-medidas a img:hover {
+    transform: scale(1.06);
+}
+
+/* ---- Lucro ---- */
+#lucro {
+    padding: 5rem 0;
+    background: var(--cream);
+}
+
+.lucro-header {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+#lucro h2 {
+    font-size: clamp(1.8rem, 4vw, 2.5rem);
+    color: var(--main-strong);
+    line-height: 1.25;
+    margin-bottom: 0.75rem;
+}
+
+#lucro h2 span {
+    color: var(--secondary);
+}
+
+.lucro-subtitle {
+    font-size: 1rem;
+    color: #666;
+    margin: 0;
+}
+
+/* Grid de cards */
+.lucro-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.25rem;
+    margin-bottom: 2.5rem;
+}
+
+.lucro-card {
+    background: #fff;
+    border-radius: var(--bradius);
+    padding: 2rem 1.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    box-shadow: 0 4px 20px rgba(26,10,12,0.07);
+    transition: transform .25s, box-shadow .25s;
+    border-top: 3px solid transparent;
+}
+
+.lucro-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 32px rgba(26,10,12,0.13);
+    border-top-color: var(--secondary);
+}
+
+.lucro-icon {
+    width: 62px;
+    height: 62px;
+    background: var(--secondary);
+    border-radius: 50%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1rem;
+    flex-shrink: 0;
+}
+
+.lucro-icon i {
+    font-size: 1.4rem;
+    color: #fff;
+}
+
+.lucro-card p {
+    font-size: 0.92rem;
+    font-weight: 600;
+    color: #333;
+    line-height: 1.7;
+    margin: 0;
+}
+
+/* CTA */
+.lucro-cta {
+    text-align: center;
+}
+
+.lucro-cta a {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.6rem;
+    background: var(--main);
+    color: #fff;
+    font-weight: 700;
+    font-size: 1rem;
+    padding: 0.9rem 2rem;
+    border-radius: 50px;
+    text-decoration: none;
+    transition: background .2s, transform .2s;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.lucro-cta a:hover {
+    background: var(--main-strong);
+    transform: translateY(-2px);
+}
+
+.lucro-cta a i {
+    font-size: 1.3rem;
+}
+
+/* ---- Vídeo ---- */
+.video {
+    margin: 0;
+    padding: 5rem 1rem;
+    background: var(--main-strong);
+    justify-content: center;
+}
+
+.video iframe {
+    border: none;
+    width: 860px;
+    max-width: 100%;
+    height: 480px;
+    border-radius: var(--bradius);
+    box-shadow: 0 20px 60px rgba(0,0,0,0.4);
+}
+
+/* ---- Responsivo ---- */
+@media screen and (max-width: 992px) {
+    .lucro-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    #mapa .desc ul {
+        columns: 1;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    #about {
+        padding: 3rem 0;
+    }
+
+    #about .desc {
+        padding-left: 0;
+        margin-top: 2rem;
+    }
+
+    #about h1 {
+        font-size: 2.2rem;
+    }
+
+    .video iframe {
+        height: 240px;
+    }
+
+    .box-bg-sob-medidas {
+        padding: 12rem 0;
+    }
+}
+
+@media screen and (max-width: 641px) {
+    .lucro-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .mapa-mobile {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    #mapa .cards .element {
+        padding: 0.5rem;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .box-bg-sob-medidas {
+        padding: 14rem 0;
+    }
+}

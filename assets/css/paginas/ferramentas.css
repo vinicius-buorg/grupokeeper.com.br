@@ -1,0 +1,103 @@
+/* ============================================================
+   FERRAMENTAS — ferramentas.css
+   ============================================================ */
+
+#tools {
+    padding: 4rem 0 5rem;
+}
+
+.tools-title {
+    margin-bottom: 2.5rem;
+}
+
+.tools-title h2 {
+    font-size: clamp(1.8rem, 4vw, 2.5rem);
+    color: var(--main);
+    margin: 0;
+    line-height: 1.2;
+}
+
+.tools-title h2::after {
+    content: '';
+    display: block;
+    width: 56px;
+    height: 4px;
+    background: var(--secondary);
+    margin-top: 0.75rem;
+    border-radius: 2px;
+}
+
+/* ---- Cards de ferramentas ---- */
+.tools-content {
+    background: #fff;
+    border-radius: var(--bradius);
+    box-shadow: 0 4px 20px rgba(26,10,12,0.07);
+    transition: transform .25s, box-shadow .25s;
+    overflow: hidden;
+}
+
+.tools-content:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 32px rgba(26,10,12,0.13);
+}
+
+.link {
+    display: flex;
+    align-items: center;
+    padding: 1.5rem 1.75rem;
+    gap: 1.25rem;
+    text-decoration: none;
+}
+
+.link-icon {
+    flex-shrink: 0;
+    width: 52px;
+    height: 52px;
+    background: var(--main);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.link-icon i {
+    color: #fff;
+    font-size: 1.3rem;
+    padding: 0;
+}
+
+.link-desc {
+    flex: 1;
+}
+
+.link-desc a {
+    text-decoration: none;
+    display: block;
+}
+
+.link-desc p {
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--main-strong);
+    margin: 0;
+    transition: color .2s;
+    line-height: 1.4;
+}
+
+.link-desc a:hover p {
+    color: var(--main);
+}
+
+.link-desc a::after {
+    content: ' →';
+    font-size: 0.9rem;
+    color: var(--secondary);
+    font-weight: 700;
+}
+
+/* ---- Responsivo ---- */
+@media screen and (max-width: 640px) {
+    #tools { padding: 3rem 0 4rem; }
+
+    .link { padding: 1.25rem; }
+}

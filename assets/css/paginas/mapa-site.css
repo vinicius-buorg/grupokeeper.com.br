@@ -1,0 +1,33 @@
+/* Sitemap - 404 */
+
+main {
+    padding: 80px 0;
+}
+
+.sitemap {
+    padding:0;
+    list-style:none;
+    height: 70vh;
+    overflow-y: auto;
+}
+.sitemap a {
+    color:#444
+}
+.sitemap ul, .sitemap ul > li > ul {
+    list-style:none
+}
+.sitemap li {
+    margin:4px 0
+}
+.sitemap li > a {
+    font-weight:700
+}
+.sitemap ul > li > ul > li > a {
+    font-weight:normal;
+    font-size:14px
+}
+.sub-menu{
+    height: 40vh;
+    overflow-y: scroll;
+    margin-left: 20px;
+}

@@ -1,0 +1,161 @@
+:root {
+    --font: 'Raleway', sans-serif;
+    --main: #7d010c;
+    --main-strong: #041028;
+    --secondary: #d4b046;
+    --blue: #36cdff;
+    --grey: #7A7A7A;
+    --black: #212529;
+    --white: #FFF;
+    --dark-white: #F7F7F7;
+    --bradius: 16px;
+  }
+
+#breadcrumb {
+    background: var(--black);
+    color: var(--white);
+    display: block;
+    padding: 15px 30px;
+}
+
+#breadcrumb a {
+    color: var(--white);
+}
+
+#breadcrumb strong {
+    color: var(--secondary);
+}
+
+/* BLOG */
+
+.content-title h2 {
+    font-size: 50px;
+    color: var(--main);
+}
+
+.card-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 20px 0;
+    padding: 1rem;
+    border: solid var(--main) 2px;
+    border-radius: 7px;
+    transition: ease-in-out .3s;
+    min-height: 579px;
+}
+
+.card-content:hover {
+    border-radius: 30px;
+    transform: translateY(-10px);
+}
+
+.card-img img {
+    object-fit: cover;
+    height: 261px;
+    border-radius: 15px;
+    width: 100%;
+}
+
+.card-title h2 {
+    color: var(--main);
+    text-align: center;
+    min-height: 64px;
+}
+
+.card-date p {
+    font-size: 20px;
+    color: var(--main);
+    text-align: center;
+}
+
+.card-desc p {
+    color: var(--black);
+}
+
+/* POST */
+
+.img-filtrado img {
+    border-radius: 25px;
+    width: 500px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+    margin: 20px auto;
+}
+
+.filtrado-title h2 {
+    font-size: 30px;
+    color: var(--main);
+}
+
+.date p {
+    color: var(--main);
+    font-size: 18px;
+}
+
+.first-content-filtrado a {
+    color: var(--main);
+    font-weight: normal;
+}
+
+#timeline {
+    padding: 2rem 0;
+}
+
+#timeline .divider {
+    margin-top: 25px;
+    padding-top: 15px;
+    border-top: 2px solid #CECECE;
+}
+
+#timeline .divider p {
+    font-weight: 500;
+}
+
+#timeline .divider a.orcamento {
+    display: inline-block;
+    background: var(--main);
+    border: 2px solid var(--main);
+    color: var(--white);
+    transition: .25s ease-in-out;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1.2rem;
+    padding: 12px 20px;
+    border-radius: 16px;
+    text-align: center;
+}
+
+#timeline .divider a.orcamento:hover {
+    animation: shake 0.82s cubic-bezier(.36, .07, .19, .97) both;
+    transform: translate3d(0, 0, 0);
+    perspective: 1000px;
+}
+
+@keyframes shake {
+    10%,
+    90% {
+        transform: translate3d(-1px, 0, 0);
+    }
+
+    20%,
+    80% {
+        transform: translate3d(2px, 0, 0);
+    }
+
+    30%,
+    50%,
+    70% {
+        transform: translate3d(-4px, 0, 0);
+    }
+
+    40%,
+    60% {
+        transform: translate3d(4px, 0, 0);
+    }
+}
+
+.cont-title h2 {
+    font-size: 30px;
+    color: var(--main);
+}

@@ -1,0 +1,16 @@
+.box-bg-tabs{
+  background: #000;
+  height: 50vh;
+  width: 100%;
+}
+
+.ajuste-tabs-menu{
+  display: flex;
+  justify-content: space-between;
+}
+
+
+
+.tab-content {
+  background: transparent !important;
+}

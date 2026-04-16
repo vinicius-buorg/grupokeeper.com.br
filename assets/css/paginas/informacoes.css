@@ -1,0 +1,79 @@
+.lista-thumbs img {
+  display: inline-block;
+  max-width: 150px;
+  height: 150px;
+  object-fit: cover;
+  padding: 10px 0;
+}
+
+.lista-thumbs h2 {
+  font-size: 15px;
+  margin: 5px 0;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.lista-thumbs h2 a {
+  text-decoration: none;
+  color: #666;
+  font-size: 15px;
+  padding: 10px;
+}
+
+.lista-thumbs .box-thumb:hover h2 a {
+  text-decoration: underline;
+}
+
+.lista-thumbs .box-thumb {
+  text-align: center;
+  min-height: 200px;
+  margin-bottom: 10px;
+  border: solid 1px #eee;
+  border-radius: 5px;
+  transition: ease 300ms all;
+}
+
+.lista-thumbs .box-thumb:hover {
+  margin-top: -5px;
+  margin-bottom: 15px;
+}
+
+#breadcrumb,
+#breadcrumb a,
+#breadcrumb strong{
+    color: #000000 !important;
+    font-size: 20px !important;
+}
+
+/* Ver mais/menos */
+
+.lista-thumbs {
+  height: 440px;
+  overflow: auto;
+  transition: 300ms all ease;
+  border: solid 1px #d7d7d7;
+  padding: 20px 2px;
+}
+
+.lista-thumbs-expand {
+  height: 150vh;
+  transition: 300ms all ease;
+  overflow: auto;
+}
+
+.lista-thumbs-expand-action {
+  text-align: center;
+  margin: 0 0 20px;
+  box-shadow: 0px -7px 6px -5px rgba(0, 0, 0, 0.3);
+  padding: 20px 0 0;
+  z-index: 2;
+  position: relative;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 40em) {
+  .lista-thumbs .box-thumb {
+    min-height: 210px;
+  }
+}

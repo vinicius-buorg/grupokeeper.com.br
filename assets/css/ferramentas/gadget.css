@@ -1,0 +1,40 @@
+.whatsapp-link {
+    position: fixed;
+    text-align: center;
+    z-index: 1000;
+    bottom: 25px;
+    right: 40px;
+}
+
+.whatsapp-link img {
+    width: 60px;
+}
+
+.whatsapp-link {
+    animation: 
+        pulse 1s ease infinite alternate, 
+        nudge 2s linear infinite alternate;
+}
+
+@keyframes pulse {
+    0% {
+        transform: translateX(20px);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+html,
+body {
+    height: 100%;
+}
+
+@media screen and (max-width: 641px){
+    .whatsapp-link {
+        bottom: 51px;
+    }
+    .whatsapp-link img {
+        width: 56px;
+    }
+}
