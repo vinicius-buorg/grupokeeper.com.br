@@ -4,6 +4,7 @@ $h1           = "Home";
 $title         = "Assessoria e Contabilidade Empresarial";
 $description = "A procura de uma Contabilidade em Guarulhos? O Grupo Keeper tem 30 anos de experiência e oferece diversos serviços especializados."; // Manter entre 130 a 160 caracteres
 $keywords    = $title;
+$is_home     = true;
 
 // Perguntas frequentes — usadas no schema FAQPage e na seção visual
 $faqs = [
