@@ -507,7 +507,7 @@ $borg->cssCompress(array(
                 <div class="aval-grid">
                     <?php foreach ($avaliacoes as $av):
                         $initials = preg_replace('/[^A-Z]/','', strtoupper($av['nome']));
-                        $initials = mb_substr($initials, 0, 1) . (mb_strlen($initials) > 1 ? mb_substr($initials, -1) : '');
+                        $initials = substr($initials, 0, 1) . (strlen($initials) > 1 ? substr($initials, -1) : '');
                     ?>
                     <div class="dep-container">
                         <div class="aval-stars dep-icons" aria-label="Avaliação: <?= $av['nota'] ?> de 5 estrelas">
